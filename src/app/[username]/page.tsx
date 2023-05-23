@@ -16,7 +16,9 @@ export default async function Checker({
   return data.taken.includes(params.username) ? (
     <p className="text-red-600">@{params.username} is taken.</p>
   ) : data.invalid.includes(params.username) ? (
-    <p className="text-red-600">@{params.username} is invalid.</p>
+    <p className="text-red-600">
+      @{params.username} has been reserved by Discord.
+    </p>
   ) : (
     <p className="text-green-600">@{params.username} is not taken!</p>
   );

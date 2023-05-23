@@ -1,8 +1,7 @@
 import axios, { type AxiosResponse } from "axios";
-import { Button } from "~/components/button";
-import UsernameForm from "~/components/form";
-import { Input } from "~/components/input";
 import { ListResponse } from "~/lib/types";
+
+export const revalidate = 60;
 
 export default async function Checker({
   params,

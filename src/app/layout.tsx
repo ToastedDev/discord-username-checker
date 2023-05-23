@@ -8,6 +8,7 @@ export const metadata = {
   title: "Discord Username Checker",
   description: "Check if your @username is available or not.",
   themeColor: "#5865F2",
+  metadataBase: new URL("https://discord-username-checker.vercel.app"),
   twitter: {
     site: "@ToastedDev",
     creator: "@ToastedDev",
@@ -17,7 +18,7 @@ export const metadata = {
     title: "Discord Username Checker",
     description: "Check if your @username is available or not.",
     type: "website",
-    url: "https://discord-username-checker.vercel.app",
+    url: "/",
   },
 };
 

@@ -1,5 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
+import Link from "next/link";
+import { buttonVariants } from "~/components/button";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -38,6 +40,26 @@ export default function RootLayout({
           <div className="flex flex-grow flex-col items-center justify-center gap-2">
             {children}
           </div>
+          <footer className="fixed bottom-4">
+            <ul className="flex gap-1 divide-x-2">
+              <li>
+                <Link
+                  className="px-2 hover:underline"
+                  href="https://github.com/ToastedDev/discord-username-checker"
+                >
+                  GitHub
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="px-3 hover:underline"
+                  href="https://discord.com/blog/usernames"
+                >
+                  Blog post from Discord
+                </Link>
+              </li>
+            </ul>
+          </footer>
         </main>
         <Analytics />
       </body>

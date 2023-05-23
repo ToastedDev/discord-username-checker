@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Discord Username Checker",
-  description: "Check if your Discord handle is available or not.",
+  description: "Check if your @username is available or not.",
   themeColor: "#5865F2",
   twitter: {
     site: "@ToastedDev",
@@ -15,7 +15,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Discord Username Checker",
-    description: "Check if your Discord handle is available or not.",
+    description: "Check if your @username is available or not.",
     type: "website",
     url: "https://discord-username-checker.vercel.app",
   },

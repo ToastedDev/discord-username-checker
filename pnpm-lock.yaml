@@ -5,6 +5,7 @@ specifiers:
   '@types/node': 20.2.3
   '@types/react': 18.2.6
   '@types/react-dom': 18.2.4
+  '@vercel/analytics': ^1.0.1
   autoprefixer: 10.4.14
   axios: ^1.4.0
   class-variance-authority: ^0.6.0
@@ -28,6 +29,7 @@ dependencies:
   '@types/node': 20.2.3
   '@types/react': 18.2.6
   '@types/react-dom': 18.2.4
+  '@vercel/analytics': 1.0.1
   autoprefixer: 10.4.14_postcss@8.4.23
   axios: 1.4.0
   class-variance-authority: 0.6.0_typescript@5.0.4
@@ -396,6 +398,10 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.59.7
       eslint-visitor-keys: 3.4.1
+    dev: false
+
+  /@vercel/analytics/1.0.1:
+    resolution: {integrity: sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==}
     dev: false
 
   /acorn-jsx/5.3.2_acorn@8.8.2:

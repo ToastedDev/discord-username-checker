@@ -17,7 +17,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={[inter.className, "dark"].join(" ")}>
         <main className="flex h-screen flex-col items-center p-4">
-          {children}
+          <header className="flex flex-col items-center text-center">
+            <h1 className="text-5xl font-bold">Discord Username Checker</h1>
+            <p>Check if your @username is taken or not.</p>
+          </header>
+          <div className="flex flex-grow flex-col items-center justify-center gap-2">
+            {children}
+          </div>
         </main>
       </body>
     </html>

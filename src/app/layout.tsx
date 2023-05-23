@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { buttonVariants } from "~/components/button";
+import Balancer, { Provider as BalancerProvider } from "react-wrap-balancer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,8 +34,14 @@ export default function RootLayout({
       <body className={[inter.className, "dark"].join(" ")}>
         <main className="flex h-screen flex-col items-center p-4">
           <header className="flex flex-col items-center text-center">
-            <h1 className="text-5xl font-bold">Discord Username Checker</h1>
-            <p>Check if your @username is taken or not.</p>
+            <BalancerProvider>
+              <Balancer as="h1" className="text-5xl font-bold">
+                Discord Username Checker
+              </Balancer>
+              <Balancer as="p">
+                Check if your @username is taken or not.
+              </Balancer>
+            </BalancerProvider>
           </header>
           <div className="flex flex-grow flex-col items-center justify-center gap-2">
             {children}

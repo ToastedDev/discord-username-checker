@@ -58,6 +58,7 @@ export default function UsernameForm({
                   <Input
                     placeholder="Enter your desired username..."
                     {...field}
+                    className="w-56"
                   />
                 </FormControl>
               </FormItem>

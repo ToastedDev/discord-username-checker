@@ -18,9 +18,13 @@ import { Button } from "./button";
 import { Input } from "./input";
 
 const formSchema = z.object({
-  username: z.string().regex(/^[a-zA-Z0-9_.]*$/g, {
-    message: "Invalid username.",
-  }),
+  username: z
+    .string()
+    .min(2, "Username must contain more than 2 characters.")
+    .max(32, "Username must contain less than 32 characters.")
+    .regex(/^(?!.*\.\.)[a-z0-9_.]+$/g, {
+      message: "Invalid username.",
+    }),
 });
 
 export default function UsernameForm({

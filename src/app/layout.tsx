@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={[inter.className, "dark"].join(" ")}>
         <main className="flex h-screen flex-col items-center p-4">
           {children}
         </main>

@@ -10,8 +10,7 @@ export default function CheckerLayout({
 }) {
   return (
     <>
-      <UsernameForm defaultValue={params.username} />
-      {children}
+      <UsernameForm defaultValue={params.username}>{children}</UsernameForm>
     </>
   );
 }

@@ -7,6 +7,18 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Discord Username Checker",
   description: "Check if your Discord handle is available or not.",
+  themeColor: "#5865F2",
+  twitter: {
+    site: "@ToastedDev",
+    creator: "@ToastedDev",
+    card: "summary_large_image",
+  },
+  openGraph: {
+    title: "Discord Username Checker",
+    description: "Check if your Discord handle is available or not.",
+    type: "website",
+    url: "https://discord-username-checker.vercel.app",
+  },
 };
 
 export default function RootLayout({

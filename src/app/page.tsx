@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold text-center">Discord Username Checker</h1>
+    <h1 className="text-center text-3xl font-bold">Discord Username Checker</h1>
   );
 }
